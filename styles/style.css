@@ -1,38 +1,50 @@
 body{
   font-family: 'Open Sans', sans-serif;
-  color: #2b2b2b;
+  color: #444;
+  background-color:  #c28c34; 
 }
 /* begin nav styles */
 
 nav {
   background-color: #fff;
   height: 180px;
-  width: 100vw;
+  width: 100%;
 }
 
 .nav-div {
   display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.icon-word-art {
+  font-size: 20px;
 }
 
 .logo-admin-sect{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .logo-img{
  width: 325px;
  height: 145px;
+ display: inline-block;
 }
 
 .icon-sect {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  width: 35%;
+  padding-bottom: 50px;
+  margin-left: 14px;
 }
 
-.fas{
+.fas,
+.far {
   margin: 0px 10px;
 }
 
@@ -46,9 +58,15 @@ article {
 /* begin main styles */
 
 main {
-  background-color: #c28c34; 
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+}
+
+.title{
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 600; 
+  padding: 20px;
 }
 
 .card{
@@ -56,21 +74,117 @@ main {
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 25%;
-  margin-left: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  box-shadow: #444 5px 5px 5px 0px;
 }
 
-.card-sect {
+.card-sect{
   display: flex;
-  flex-direction: column; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+
+#card2 {
+  background-image: url(../assets/gent1.jpg);
+}
+
+#card3 {
+  background-image: url(../assets/gent2.jpg);
+}
+
+#card4 {
+  background-image: url(../assets/lady2.jpg);
+  color: #444;
+}
+
+#card5 {
+  background-image: url(../assets/lady3.jpg);
+}
+
+#card6 {
+  background-image: url(../assets/lady4.jpg);
+  color: #444;
+}
+
+#card7 {
+  background-image: url(../assets/gent3.jpg);
+}
+
+#card8 {
+  background-image: url(../assets/gent4.jpg);
 }
 
 .card-head-div {
+  display: flex;
   background-image: url(../assets/lady1.jpg);
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  justify-content: space-between;
+  color: #FFF;
+}
+
+.like-art {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 10px;
+}
+
+.fa-heartbeat{
+  font-size: 50px;
+  margin: 10px 15px;
+}
+
+.card-body {
+  margin: 5px;
+  height: 20%;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 12px;
+  color: #999;
+}
+
+.num,
+.num-2 {
+  font-size: 35px;
+}
+
+.num-2 {
+ color: #c28c34;
+}
+
+.url {
+  background-color: #e8e8e8;
+}
+
+h4 {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.fas:hover,
+.far:hover,
+p:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover {
+ color: goldenrod;
 }
 
 
