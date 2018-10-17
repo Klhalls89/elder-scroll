@@ -13,34 +13,20 @@ nav {
 
 .nav-div {
   display: flex;
-  justify-content: space-between;
   height: 100%;
+  justify-content: space-between;
+}
+
+.icon-sect {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 14px;
+  padding-bottom: 50px;
 }
 
 .icon-word-art {
   font-size: 20px;
-}
-
-.logo-admin-sect{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  height: 100%;
-}
-
-.logo-img{
- width: 325px;
- height: 145px;
- display: inline-block;
-}
-
-.icon-sect {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-bottom: 50px;
-  margin-left: 14px;
 }
 
 .fas,
@@ -53,8 +39,20 @@ article {
   flex-direction: row;
 }
 
+.logo-admin-sect {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
 
-
+.logo-img {
+ display: inline-block;
+ height: 145px;
+ width: 325px;
+}
+``
 /* begin main styles */
 
 main {
@@ -62,30 +60,84 @@ main {
   width: 100%;
 }
 
-.title{
+.title {
   color: #FFF;
   font-size: 40px;
   font-weight: 600; 
   padding: 20px;
 }
 
-.card{
+.card-sect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+}
+
+.card {
   background-color: #fff;
+  box-shadow: #444 5px 5px 5px 0px;
   display: flex;
   flex-direction: column;
   height: 500px;
-  width: 300px;
   margin-bottom: 20px;
-  box-shadow: #444 5px 5px 5px 0px;
+  width: 300px;
 }
 
-.card-sect{
+.card-head-div {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
+  background-image: url(../assets/lady1.jpg);
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-between;
+  color: #FFF;
 }
 
+.fa-heartbeat {
+  font-size: 50px;
+  margin: 10px 15px;
+}
+
+.like-art {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 10px;
+}
+
+.num,
+.num-2 {
+  font-size: 35px;
+}
+
+.num-2 {
+ color: #c28c34;
+}
+
+.card-body {
+  margin: 5px;
+  height: 20%;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 12px;
+  color: #999;
+}
+
+h4 {
+  font-size: 15px;
+  margin: 10px;
+}
 
 #card2 {
   background-image: url(../assets/gent1.jpg);
@@ -117,65 +169,11 @@ main {
   background-image: url(../assets/gent4.jpg);
 }
 
-.card-head-div {
-  display: flex;
-  background-image: url(../assets/lady1.jpg);
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: space-between;
-  color: #FFF;
-}
-
-.like-art {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 10px;
-}
-
-.fa-heartbeat{
-  font-size: 50px;
-  margin: 10px 15px;
-}
-
-.card-body {
-  margin: 5px;
-  height: 20%;
-}
-
-h1 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 12px;
-  color: #999;
-}
-
-.num,
-.num-2 {
-  font-size: 35px;
-}
-
-.num-2 {
- color: #c28c34;
-}
-
 .url {
   background-color: #e8e8e8;
 }
 
-h4 {
-  font-size: 15px;
-  margin: 10px;
-}
+/*hover states here*/
 
 .fas:hover,
 .far:hover,
@@ -188,3 +186,58 @@ h4:hover {
 }
 
 /*media queries here*/
+
+@media only screen and (max-width: 840px){
+
+nav {
+  height: 200px;
+}
+
+.icon-sect {
+  display: block;
+}
+
+.fas,
+.far {
+  visibility: hidden;
+}
+
+article {
+  display: block;
+}
+
+.icon-word-art {
+  font-size: 20px;
+}
+
+.admin-user {
+  padding-right: 20px;
+}
+
+.logo-img {
+ display: block;
+}
+ 
+}
+
+@media only screen and (max-width: 400px){
+
+.icon-sect {
+  display: block;
+}
+
+.admin-user{
+  display: block;
+  float: left;
+}
+
+.logo-img {
+ height: 96px;
+ width: 216px;
+}
+
+.admin-user {
+  margin-bottom: 65px;
+}
+
+}
